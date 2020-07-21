@@ -1,0 +1,52 @@
+﻿/*CLASS*/
+
+.flex-col-sa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.flex-col {
+    padding-top:20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flex-row {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.master-container {
+    margin: 0;
+    padding: 0;
+}
+
+.logo-prop {
+    width: 100%;
+    height: auto;
+}
+
+/*ID*/
+#bgi-home {
+    background-image: url(../img/workingprogress.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    color: white;
+}
+
+#flex-container-row-sb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#logo-prop {
+    width: 100%;
+    height: auto;
+}
