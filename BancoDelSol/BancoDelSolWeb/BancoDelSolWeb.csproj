@@ -95,7 +95,6 @@
     <Content Include="pages\MisClientesEjecutivo.aspx" />
     <Content Include="pages\RegistrarClienteEjecutivo.aspx" />
     <Content Include="pages\TransferenciaCliente.aspx" />
-    <Content Include="pages\DepositarCliente.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -168,13 +167,6 @@
     </Compile>
     <Compile Include="pages\TransferenciaCliente.aspx.designer.cs">
       <DependentUpon>TransferenciaCliente.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="pages\DepositarCliente.aspx.cs">
-      <DependentUpon>DepositarCliente.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\DepositarCliente.aspx.designer.cs">
-      <DependentUpon>DepositarCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

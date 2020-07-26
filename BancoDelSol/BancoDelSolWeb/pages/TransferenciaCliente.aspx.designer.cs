@@ -24,40 +24,13 @@ namespace BancoDelSolWeb.pages
         protected global::System.Web.UI.WebControls.GridView gvCuentas;
 
         /// <summary>
-        /// Control lblNumCuentaProducto.
+        /// Control divTransferenciaTercero.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNumCuentaProducto;
-
-        /// <summary>
-        /// Control ddlCuentasProducto.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCuentasProducto;
-
-        /// <summary>
-        /// Control txtMontoProducto.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMontoProducto;
-
-        /// <summary>
-        /// Control btnTransferirProducto.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnTransferirProducto;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divTransferenciaTercero;
 
         /// <summary>
         /// Control lblNumCunetaTercero.
@@ -78,6 +51,15 @@ namespace BancoDelSolWeb.pages
         protected global::System.Web.UI.WebControls.TextBox txtRunTercero;
 
         /// <summary>
+        /// Control cvRunTercero.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator cvRunTercero;
+
+        /// <summary>
         /// Control txtCuentaTercero.
         /// </summary>
         /// <remarks>
@@ -85,6 +67,15 @@ namespace BancoDelSolWeb.pages
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCuentaTercero;
+
+        /// <summary>
+        /// Control cvCuentaTercero.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator cvCuentaTercero;
 
         /// <summary>
         /// Control txtMontoTerceros.
@@ -96,6 +87,15 @@ namespace BancoDelSolWeb.pages
         protected global::System.Web.UI.WebControls.TextBox txtMontoTerceros;
 
         /// <summary>
+        /// Control cvMontoTercero.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator cvMontoTercero;
+
+        /// <summary>
         /// Control txtContrasena.
         /// </summary>
         /// <remarks>
@@ -105,6 +105,15 @@ namespace BancoDelSolWeb.pages
         protected global::System.Web.UI.WebControls.TextBox txtContrasena;
 
         /// <summary>
+        /// Control cvContrasena.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator cvContrasena;
+
+        /// <summary>
         /// Control btnTransferirTercero.
         /// </summary>
         /// <remarks>
@@ -112,5 +121,14 @@ namespace BancoDelSolWeb.pages
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnTransferirTercero;
+
+        /// <summary>
+        /// Control lblConfirmacionTransferencia.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblConfirmacionTransferencia;
     }
 }

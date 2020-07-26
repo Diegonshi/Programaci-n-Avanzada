@@ -41,6 +41,7 @@ namespace BancoDelSolWeb.pages
 
         protected void btnTransferenciaCliente_Click(object sender, EventArgs e)
         {
+            runCliente = Request.QueryString["run"].ToString();
             Response.Redirect("TransferenciaCliente.aspx?run="+runCliente);
         }
 
