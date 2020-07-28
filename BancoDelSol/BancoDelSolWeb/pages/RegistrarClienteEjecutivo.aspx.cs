@@ -139,7 +139,7 @@ namespace BancoDelSolWeb.pages
                     args.IsValid = false;
                 }else if (strNumCuenta.Count() < 6)
                 {
-                    cvNumeroCuenta.ErrorMessage = "La cuenta no puede tener más de 6 digitos";
+                    cvNumeroCuenta.ErrorMessage = "La cuenta no puede tener menos de 6 digitos";
                     args.IsValid = false;
                 }
                 else

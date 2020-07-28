@@ -16,7 +16,7 @@
             <div class="col-lg-4">
                 <label>Crea un nuevo Ejecutivo</label>
                 <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Cerrar Sesión</asp:HyperLink>
-                <div class="form-group">
+                <div>
                     <label>RUN</label>
                     <asp:TextBox ID="txtRunEjecutivo" runat="server" CssClass="form-control"></asp:TextBox>
 
@@ -71,18 +71,18 @@
                 <div class="form-group">
                     <asp:Button ID="btnCrearEjecutivo" runat="server" Text="Agregar Ejecutivo" CssClass="form-control btn btn-success" OnClick="btnCrearEjecutivo_Click" />
                     <div></div>
-                    <center>
+                    
                     <asp:Label ID="lblMensaje" runat="server" CssClass="text-success"></asp:Label>
-                        </center>
+                      
                 </div>
             </div>
             <div class="col-lg-8">
                 <!--Grilla-->
                 <div class="card">
                     <div class="card-header">
-                        <center>
+                        
                             <h3>Lista de Ejecutivos</h3>
-                        </center>
+                      
                     </div>
                     
                     <div class="card-body">
