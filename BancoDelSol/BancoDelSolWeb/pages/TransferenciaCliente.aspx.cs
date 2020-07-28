@@ -62,26 +62,6 @@ namespace BancoDelSolWeb.pages
                 {
                     for (int j = 0; j < cuentas.Count(); j++)
                     {
-
-                        /*int diferencia = (monto - cuentas[i].Saldo);
-                        cuentas[i].Credito = cuentas[i].Credito - diferencia;
-                        cuentas[i].Saldo = 0;
-                        cuentas[j].Saldo = cuentas[j].Saldo + monto;
-                        Movimiento movRemia = new Movimiento((cuentas[i].Movimientos.Count() + 100), cuentas[i], "Transferencia", monto);
-                        Movimiento movDesta = new Movimiento((cuentas[j].Movimientos.Count() + 100), cuentas[j], "Transferencia", monto);
-                        cuentas[i].Movimientos.Add(movRemia);
-                        cuentas[j].Movimientos.Add(movDesta);
-                        this.lblConfirmacionTransferencia.Text = "Se ha realizado la transferencia a " + cuentas[j].CuentaHabiente.Nombre + " " + cuentas[j].CuentaHabiente.Paterno + " exitosamente";
-                        this.lblConfirmacionTransferencia.Visible = true;
-
-                        cuentas[i].Saldo = cuentas[i].Saldo - monto;
-                        cuentas[j].Saldo = cuentas[j].Saldo + monto;
-                        Movimiento movRemib = new Movimiento((cuentas[i].Movimientos.Count() + 100), cuentas[i], "Transferencia", monto);
-                        Movimiento movDestb = new Movimiento((cuentas[j].Movimientos.Count() + 100), cuentas[j], "Transferencia", monto);
-                        cuentas[i].Movimientos.Add(movRemib);
-                        cuentas[j].Movimientos.Add(movDestb);
-                        this.lblConfirmacionTransferencia.Text = "Se ha realizado la transferencia a " + cuentas[j].CuentaHabiente.Nombre + " " + cuentas[j].CuentaHabiente.Paterno + " exitosamente";
-                        this.lblConfirmacionTransferencia.Visible = true;*/
                         if (cuentas[i].Num_cuenta == cuentaRemitente && cuentas[j].Num_cuenta == cuentaDestino && cuentaRemitente != cuentaDestino)
                         {
                             if (monto > cuentas[i].Saldo)
@@ -102,6 +82,9 @@ namespace BancoDelSolWeb.pages
                                     cuentas[j].Movimientos.Add(movDest);
                                     this.lblConfirmacionTransferencia.Text = "Se ha realizado la transferencia a " + cuentas[j].CuentaHabiente.Nombre + " " + cuentas[j].CuentaHabiente.Paterno + " exitosamente";
                                     this.lblConfirmacionTransferencia.Visible = true;
+                                    this.gvCuentas.DataSource = cuentaCliente; //Cargar Grilla de Cuentas
+                                    this.gvCuentas.DataBind(); //Actualizar Grilla
+                                    this.divTransferenciaTercero.Visible = false;
                                 }
                             }
                             else
@@ -114,6 +97,9 @@ namespace BancoDelSolWeb.pages
                                 cuentas[j].Movimientos.Add(movDest);
                                 this.lblConfirmacionTransferencia.Text = "Se ha realizado la transferencia a " + cuentas[j].CuentaHabiente.Nombre + " " + cuentas[j].CuentaHabiente.Paterno + " exitosamente";
                                 this.lblConfirmacionTransferencia.Visible = true;
+                                this.gvCuentas.DataSource = cuentaCliente; //Cargar Grilla de Cuentas
+                                this.gvCuentas.DataBind(); //Actualizar Grilla
+                                this.divTransferenciaTercero.Visible = false;
                             }
                         }
                         else
