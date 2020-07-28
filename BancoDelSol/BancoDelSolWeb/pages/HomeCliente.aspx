@@ -38,7 +38,6 @@
                 </a>
             </div>
             <asp:Button ID="btnTransferenciaCliente" runat="server" Text="Transferencia" OnClick="btnTransferenciaCliente_Click"/>
-            <asp:Button ID="btnDepositoCliente" runat="server" Text="Depositar" OnClick="btnDepositoCliente_Click" />
         </div>
         <div class="footer-content">
 

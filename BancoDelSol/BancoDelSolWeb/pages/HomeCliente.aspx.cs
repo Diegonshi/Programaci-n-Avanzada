@@ -45,9 +45,5 @@ namespace BancoDelSolWeb.pages
             Response.Redirect("TransferenciaCliente.aspx?run="+runCliente);
         }
 
-        protected void btnDepositoCliente_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("DepositarCliente.aspx?run=" + runCliente);
-        }
     }
 }

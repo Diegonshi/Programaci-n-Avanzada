@@ -126,12 +126,8 @@ namespace BancoDelSolWeb.pages
                 {
                         args.IsValid = true;
                 }
-                else
-                {
-                    cvCuentaTercero.Text = "No existe la cuenta destino";
-                    args.IsValid = false;
-                }
             }
+
         }
 
         protected void cvRunTercero_ServerValidate(object source, ServerValidateEventArgs args)
@@ -143,11 +139,6 @@ namespace BancoDelSolWeb.pages
                 if (clientes[i].Run == run)
                 {
                     args.IsValid = true;
-                }
-                else
-                {
-                    cvCuentaTercero.Text = "No existe Run asociado a este número";
-                    args.IsValid = false;
                 }
             }
         }
